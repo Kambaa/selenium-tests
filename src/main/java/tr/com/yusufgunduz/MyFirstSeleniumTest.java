@@ -46,7 +46,9 @@ class MyFirstSeleniumTest {
         System.setProperty("webdriver.gecko.driver", "C:\\Users\\ygndz\\Downloads\\geckodriver.exe");
 
         WebDriver driver = new FirefoxDriver();
-                driver.navigate().to("http://www.yusufgunduz.com.tr");
+//                driver.navigate().to("http://www.yusufgunduz.com.tr");
+        driver.get("http://www.yusufgunduz.com.tr");
+
         System.out.println(driver.getPageSource());
         driver.close();
     }
